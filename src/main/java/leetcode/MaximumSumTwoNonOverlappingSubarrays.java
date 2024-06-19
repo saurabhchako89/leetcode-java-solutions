@@ -41,6 +41,7 @@ class MaximumSumTwoNonOverlappingSubarrays {
     return res;
   }
 
+  @SuppressWarnings("unused")
   public static void main(String[] args) {
 
     int[] A = {3, 8, 1, 3, 2, 1, 8, 9, 0};

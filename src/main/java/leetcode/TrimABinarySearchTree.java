@@ -8,6 +8,7 @@ import util.TreeNode;
 
 class TrimABinarySearchTree {
 
+  @SuppressWarnings("unused")
   private TreeNode trimBST(TreeNode root, int L, int R) {
 
     if (root == null)

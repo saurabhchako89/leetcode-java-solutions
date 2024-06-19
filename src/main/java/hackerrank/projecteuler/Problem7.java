@@ -5,31 +5,31 @@ import java.util.Scanner;
 class Problem7 {
 
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
+    try (Scanner sc = new Scanner(System.in)) {
+      int T = sc.nextInt();
+      int[] store = new int[T];
 
-    int T = sc.nextInt();
-    int[] store = new int[T];
+      int j, max = 0;
 
-    int j, max = 0;
+      for (int i = 0; i < T; i++) {
+        j = sc.nextInt();
+        store[i] = j - 1;
+        if (j > max)
+          max = j;
+      }
 
-    for (int i = 0; i < T; i++) {
-      j = sc.nextInt();
-      store[i] = j - 1;
-      if (j > max)
-        max = j;
-    }
+      int[] primeChecker = new int[max];
+      int[] primeNumbers = new int[max];
+      int end = 1;
 
-    int[] primeChecker = new int[max];
-    int[] primeNumbers = new int[max];
-    int end = 1;
+      primeChecker[0] = 2;
+      primeNumbers[0] = 2;
 
-    primeChecker[0] = 2;
-    primeNumbers[0] = 2;
+      primeNumbers = findPrime(primeChecker, primeNumbers, end, max);
 
-    primeNumbers = findPrime(primeChecker, primeNumbers, end, max);
-
-    for (int i = 0; i < T; i++) {
-      System.out.println(primeNumbers[store[i]]);
+      for (int i = 0; i < T; i++) {
+        System.out.println(primeNumbers[store[i]]);
+      }
     }
   }
 

@@ -35,6 +35,7 @@ class ReachableEmployees {
 
     int[][] bfs_res = new int[employeeNodes + 1][2];
 
+    @SuppressWarnings("unchecked")
     ArrayList<Integer>[] graph = new ArrayList[employeeNodes + 1];
 
     for (int i = 0; i < employeeNodes + 1; i++) {

@@ -7,6 +7,7 @@ import util.TreeNode;
  */
 
 class MergeTwoBinaryTrees {
+  @SuppressWarnings("unused")
   private TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
 
     if (t1 == null)

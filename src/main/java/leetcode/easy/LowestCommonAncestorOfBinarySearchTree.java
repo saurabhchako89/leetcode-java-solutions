@@ -7,6 +7,7 @@ import util.TreeNode;
 
 class LowestCommonAncestorOfBinarySearchTree {
 
+  @SuppressWarnings("unused")
   private TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 
     if (root == null)

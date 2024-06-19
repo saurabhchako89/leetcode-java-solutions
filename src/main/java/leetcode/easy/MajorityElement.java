@@ -1,7 +1,5 @@
 package leetcode.easy;
 
-import java.util.Arrays;
-
 /**
  * Created by nikoo28 on 12/17/17 3:14 PM
  */

@@ -8,6 +8,7 @@ import util.TreeNode;
 
 class SumOfLeftLeaves {
 
+  @SuppressWarnings("unused")
   private int sumOfLeftLeaves(TreeNode root) {
 
     if (root == null)

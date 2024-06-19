@@ -9,6 +9,7 @@ import java.util.Map;
 
 class LongestVowelSubsequence {
 
+  @SuppressWarnings("null")
   private static int longestSubsequence(String s) {
 
     Map<Character, Character> preVowelMap = new HashMap<>();

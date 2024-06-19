@@ -6,6 +6,9 @@ import java.util.Scanner;
 
 class Problem5 {
 
+  /**
+   * @param args
+   */
   public static void main(String[] args) {
 
     List<String> factorList = new ArrayList<>();
@@ -51,29 +54,33 @@ class Problem5 {
     factorList.add("3,13");
     factorList.add("2,2,2,5");
 
-    Scanner in = new Scanner(System.in);
-    int t = in.nextInt();
-    for (int a0 = 0; a0 < t; a0++) {
-      int n = in.nextInt();
+    try (Scanner in = new Scanner(System.in)) {
+      int t = in.nextInt();
+      for (int a0 = 0; a0 < t; a0++) {
+        int n = in.nextInt();
 
-      long number = 1;
-      for (int i = 1; i <= n; i++) {
+        long number = 1;
+        for (int i = 1; i <= n; i++) {
 
-        if (number % i == 0)
-          continue;
-
-        String factors = factorList.get(i);
-        String[] integerFactors = factors.split(",");
-        for (String integerFactor : integerFactors) {
-          int num = Integer.parseInt(integerFactor);
-
-          number = number * num;
           if (number % i == 0)
-            break;
-        }
-      }
+            continue;
 
-      System.out.println(number);
+          String factors = factorList.get(i);
+          String[] integerFactors = factors.split(",");
+          for (String integerFactor : integerFactors) {
+            int num = Integer.parseInt(integerFactor);
+
+            number = number * num;
+            if (number % i == 0)
+              break;
+          }
+        }
+
+        System.out.println(number);
+      }
+    } catch (NumberFormatException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
     }
 
   }

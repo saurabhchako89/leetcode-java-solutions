@@ -39,10 +39,11 @@ class Braces {
   }
 
   public static void main(String[] args) {
+    @SuppressWarnings("unused")
     Braces braces = new Braces();
 
     String[] br = {"{}[]()", "{[}]}"};
-    System.out.println(braces.braces(br));
+    System.out.println(Braces.braces(br));
   }
 
 

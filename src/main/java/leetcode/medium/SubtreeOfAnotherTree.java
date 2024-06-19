@@ -2,8 +2,6 @@ package leetcode.medium;
 
 import util.TreeNode;
 
-import java.util.Stack;
-
 public class SubtreeOfAnotherTree {
 
   String preOrderTraversal(TreeNode node) {

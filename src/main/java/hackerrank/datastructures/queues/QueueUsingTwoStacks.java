@@ -8,7 +8,9 @@ import java.util.Stack;
 
 public class QueueUsingTwoStacks {
 
+  @SuppressWarnings({ "rawtypes", "unchecked" })
   private Stack<Integer> input = new Stack();
+  @SuppressWarnings({ "rawtypes", "unchecked" })
   private Stack<Integer> output = new Stack();
 
   public void enqueue(int x) {

@@ -7,6 +7,7 @@ import java.util.Map;
 
 public class TopKFrequentElements {
 
+  @SuppressWarnings("unchecked")
   public int[] topKFrequent(int[] nums, int k) {
 
     List<Integer>[] bucket = new List[nums.length + 1];

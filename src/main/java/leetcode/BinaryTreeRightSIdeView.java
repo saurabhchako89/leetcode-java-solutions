@@ -13,6 +13,7 @@ import java.util.Queue;
 
 class BinaryTreeRightSIdeView {
 
+  @SuppressWarnings("null")
   private List<Integer> rightSideView(TreeNode root) {
 
     if (root == null)

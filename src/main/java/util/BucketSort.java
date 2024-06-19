@@ -10,6 +10,7 @@ import java.util.List;
 
 public class BucketSort {
 
+  @SuppressWarnings("unchecked")
   static void bucketSort(int[] arr, int noOfBuckets) {
 
     boolean isNegativePresent = false;

@@ -1,13 +1,13 @@
 package leetcode.medium;
 
-import org.checkerframework.checker.units.qual.A;
-import org.junit.jupiter.api.Test;
-import util.TreeNode;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+import util.TreeNode;
 
 class BinaryTreeZigzagLevelOrderTraversalTest {
 

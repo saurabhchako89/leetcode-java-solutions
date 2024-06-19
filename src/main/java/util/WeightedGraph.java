@@ -4,9 +4,11 @@ import java.util.*;
 
 public class WeightedGraph {
 
+  @SuppressWarnings("unused")
   private int vertices;
   private List<GraphEdge>[] adjacencyList;
 
+  @SuppressWarnings("unchecked")
   public WeightedGraph(int vertices) {
     this.vertices = vertices;
     adjacencyList = new ArrayList[vertices];

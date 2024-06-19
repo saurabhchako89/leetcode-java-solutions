@@ -8,6 +8,7 @@ import util.TreeNode;
 
 class ConstructStringFromBinaryTree {
 
+  @SuppressWarnings("unused")
   private String tree2str(TreeNode t) {
 
     if (t == null)
